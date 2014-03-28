@@ -13,4 +13,3 @@ var server = new PeerServer({
 server.on('connection', function (id) {
   console.log('id is: ' + id);
 });
-
