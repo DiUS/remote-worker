@@ -1,0 +1,37 @@
+{
+  "main": "app.js",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "sinon": "latest",
+    "should": "latest",
+    "mocha": "latest"
+  },
+  "name": "remote-worker",
+  "description": "Remote Worker - DiUS Hackday",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DiUS/remote-worker"
+  },
+  "keywords": [
+    "remote",
+    "worker",
+    "remote",
+    "webrtc"
+  ],
+  "author": "Tarcio Saraiva, Cam Smith, Pete Cohen, Andy Spinks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiUS/remote-worker/issues"
+  },
+  "homepage": "https://github.com/DiUS/remote-worker",
+  "dependencies": {
+    "peer": "latest"
+  }
+}
