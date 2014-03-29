@@ -2,7 +2,7 @@ var gpio = require('pi-gpio');
 var Node = require('n2n').Node;
 var node = new Node(6786);
 node.connect([{
-  host: 'localhost',
+  host: '192.168.1.201',
   port: 6785
 }]);
 
