@@ -33,6 +33,7 @@
   "homepage": "https://github.com/DiUS/remote-worker",
   "dependencies": {
     "peer": "latest",
-    "connect": "^2.14.3"
+    "connect": "^2.14.3",
+    "n2n": "0.0.5"
   }
 }

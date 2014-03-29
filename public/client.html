@@ -10,7 +10,7 @@
     navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
     // PeerJS object
-    var peer = new Peer('tarciosaraiva', { host: 'raspberrypi-tarcio', port: 9000, secure: true, path: '/', debug: 3});
+    var peer = new Peer('mrt', { host: 'localhost', port: 9000, secure: true, path: '/', debug: 3});
 
     peer.on('open', function(){
       $('#my-id').text(peer.id);
@@ -33,7 +33,11 @@
       $('#make-call').click(function(){
         // Initiate a call!
         var call = peer.call($('#callto-id').val(), window.localStream);
+        step3(call);
+      });
 
+      $('#light-switch').click(function(){
+        var light = peer.data($('#callto-id').val(), window.localStream);
         step3(call);
       });
 
@@ -123,6 +127,10 @@
           <div class="pure-form">
             <input type="text" placeholder="Call user id..." id="callto-id">
             <a href="#" class="pure-button pure-button-success" id="make-call">Call</a>
+          </div>
+          <h3>Light a switch</h3>
+          <div class="pure-form">
+            <a href="#" class="pure-button pure-button-success" id="light-switch">Light switch</a>
           </div>
         </div>
 
